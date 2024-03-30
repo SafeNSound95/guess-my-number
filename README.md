@@ -1,5 +1,7 @@
 # Guess My Number
 
+![](guess-my-number.png)
+
 Guess My Number is a simple browser game built with HTML/CSS and JavaScript.
 The game starts with a secret number from 1 to 20, the user will have 20 chances to guess the secret number, and could play the game again as much as he'd like to achieve better scores.
 
