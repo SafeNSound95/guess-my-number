@@ -68,7 +68,6 @@ btnAgainEl.addEventListener('click', function () {
   secretNumber = Math.floor(Math.random() * 20) + 1;
   document.body.style.background = `url(images/bg.webp)`;
   document.body.style.backgroundSize = `cover`;
-  console.log(secretNumber);
   score = 20;
   scoreEl.textContent = 20;
   guessEl.value = '';
