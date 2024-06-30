@@ -14,6 +14,7 @@ body {
   letter-spacing: 2px;
   background: url('images/bg.webp');
   background-size: cover;
+  transition: background 1s ease-in-out;
 }
 
 /* LAYOUT */
