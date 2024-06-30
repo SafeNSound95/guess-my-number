@@ -34,10 +34,17 @@ const compareNumbers = function (number, secretNumber) {
     secretNumEl.textContent = secretNumber;
     secretNumEl.style.width = '30rem';
     btnCheckEl.setAttribute('disabled', '');
-    document.body.style.background = `url(images/${
+
+    const img = new Image();
+    const imgSrc = `images/${
       images[Math.floor(Math.random() * images.length)]
-    })`;
-    document.body.style.backgroundSize = `cover`;
+    }`;
+    img.src = imgSrc;
+
+    img.addEventListener('load', () => {
+      document.body.style.background = `url(${imgSrc})`;
+      document.body.style.backgroundSize = `cover`;
+    });
   } else {
     if (score === 1) {
       messageEl.textContent = 'You lost the game';
@@ -79,3 +86,7 @@ btnAgainEl.addEventListener('click', function () {
   secretNumEl.style.width = '11rem';
   btnCheckEl.removeAttribute('disabled', '');
 });
+
+// document.body.style.background = `url(images/${
+//   images[Math.floor(Math.random() * images.length)]
+// })`;
